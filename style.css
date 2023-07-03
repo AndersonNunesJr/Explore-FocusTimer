@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --color1: #323238;
+  --bgBtnClickDarkMode: #0A3442;
+  --bgBtnClick: #02799d;
+}
+header {
+  display: flex;
+  justify-content: end;
+  padding-top: 2.5rem;
+  padding-right: 5.5rem;
+}
+.btnMode img {
+  width: 36px;
+  height: 36px;
+}
+.btnMode {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+main {
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#displayTimer {
+  display: flex;
+  flex-direction: column;
+  color: var(--color1);
+}
+
+.timer {
+  text-align: center;
+  font-size: 126.166px;
+  font-family: Roboto;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.timerBtns {
+  display: flex;
+  justify-content: space-evenly;
+}
+.play {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.pause {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.set{
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.stop {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.addTimer {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.cutTimer {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.displaySounds {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.6rem;
+}
+
+.btnSounds {
+  border: none;
+  border-radius: 2.4rem;
+  width: 138px;
+  height: 152px;
+  cursor: pointer;
+}
+
+/* DARK-MODE */
+
+body[data-darkmode="true"] {
+  background: black;
+}
+#displayTimer[data-darkmode="true"] {
+  color: #ffffff;
+}
+.timerBtnsDarkMode[data-darkmode="true"] {
+  fill: #c4c4cc;
+}
+.btnSounds[data-darkmode="true"] {
+  background: #29292e;
+}
+.btnSoundsDarkMode[data-darkmode="true"]{
+  fill: #C4C4CC;
+}
+.btnSoundspressed[data-darkmode="true"] {
+  background: var(--bgBtnClickDarkMode);
+}
+.btnSoundspressed[data-pressed="true"] {
+  background: var(--bgBtnClick);
+}
+.btnPressedFill[data-pressed="true"] {
+  fill: white;
+}
+.volume{
+  width: 70%;
+  height: 8px;
+  margin-top: 15px;
+}
+
